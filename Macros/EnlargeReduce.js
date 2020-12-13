@@ -8,7 +8,7 @@
  * Paypal.me: https://www.paypal.me/robinkuiper
  * 
  * This macro let's you easily change the size with reduce & enlarge buttons.
- * More information and screenshots: https://github.com/RobinKuiper/Foundry/macros
+ * More information and screenshots: https://github.com/RobinKuiper/Foundry/tree/master/Macros
 */
 
 let dialogEditor = new Dialog({

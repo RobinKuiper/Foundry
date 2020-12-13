@@ -8,7 +8,7 @@
  * Paypal.me: https://www.paypal.me/robinkuiper
  * 
  * This macro let's you easily create a character info overview journal entry.
- * More information and screenshots: https://github.com/RobinKuiper/Foundry/macros
+ * More information and screenshots: https://github.com/RobinKuiper/Foundry/tree/master/Macros
 */
 
 let playerActors = game.actors.filter((x) => x.hasPlayerOwner);
@@ -62,7 +62,7 @@ if (playerActors.length > 0) {
   });
 
   let dialog = new Dialog({
-    title: "Actors",
+    title: "Character Overview Creator",
     content: `
     <form id="form">
         <div class="form-group">
