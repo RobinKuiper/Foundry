@@ -1,3 +1,16 @@
+/*
+ * Version 0.1.0
+ * Made By Robin Kuiper
+ * Discord: RobinKuiper#1095
+ * Github: https://github.com/RobinKuiper/Foundry
+ * Reddit: https://www.reddit.com/user/robinkuiper/
+ * Patreon: https://patreon.com/robinkuiper
+ * Paypal.me: https://www.paypal.me/robinkuiper
+ * 
+ * This macro let's you easily create a character info overview journal entry.
+ * More information and screenshots: https://github.com/RobinKuiper/Foundry/macros
+*/
+
 let playerActors = game.actors.filter((x) => x.hasPlayerOwner);
 
 if (playerActors.length > 0) {

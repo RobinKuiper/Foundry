@@ -1,3 +1,16 @@
+/*
+ * Version 0.1.0
+ * Made By Robin Kuiper
+ * Discord: RobinKuiper#1095
+ * Github: https://github.com/RobinKuiper/Foundry
+ * Reddit: https://www.reddit.com/user/robinkuiper/
+ * Patreon: https://patreon.com/robinkuiper
+ * Paypal.me: https://www.paypal.me/robinkuiper
+ * 
+ * This macro let's you easily change the size with reduce & enlarge buttons.
+ * More information and screenshots: https://github.com/RobinKuiper/Foundry/macros
+*/
+
 let dialogEditor = new Dialog({
   title: `Reduce/Enlarge`,
   content: `
