@@ -53,7 +53,7 @@ if (playerActors.length > 0) {
     content: `
     <form id="form">
         <div class="form-group">
-            <label for="name">Journal Name:</label>
+            <label for="name">Journal Entry Name:</label>
             <input type="string" id="name" name="name" placeholder="Character Overview" />
         </div>
         
@@ -70,12 +70,12 @@ if (playerActors.length > 0) {
         </div>
         
         <div class="form-group">
-            <label for="overwrite">Overwrite?: <sup>(if exists)</sup></label>
-            <input type="checkbox" name="overwrite" id="overwrite" />
+            <label for="overwrite">Overwrite?: <br> <sup>if exists</sup></label>
+            <input type="checkbox" name="overwrite" id="overwrite" checked />
         </div>
 
         <div class="form-group">
-            <label for="actors">Actors:</label>
+            <label for="actors">Actors: <br /> <sup>Select multiple by holding CTRL.</sup></label>
             <select name="actors" id="actors" multiple>
                 ${playerActorOptions}
             </select>
@@ -84,7 +84,7 @@ if (playerActors.length > 0) {
         <hr>
         
         <div class="form-group">
-            <label for="attributes">Attributes:</label>
+            <label for="attributes">Attributes: <br /> <sup>Select multiple by holding CTRL.</sup></label>
             <select name="attributes" id="attributes" size="25" multiple>
                 ${filters}
             </select>
@@ -195,6 +195,8 @@ if (playerActors.length > 0) {
       let optgroups = document.getElementsByClassName("optgroup-with-children");
       for (var i = 0; i < optgroups.length; i++) {
         optgroups[i].onclick = (e) => {
+          if (e.target.tagName === "OPTION") return;
+
           let label = e.target.getAttribute("label").split(" ")[1];
           let children = e.target.getElementsByTagName("option");
 
